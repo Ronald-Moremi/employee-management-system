@@ -1,0 +1,116 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background with subtle gradient */
+body, html {
+    height: 100%;
+    background: linear-gradient(135deg, #d6f0f3, #f9d7e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapper centers the card and controls max width */
+.register-wrapper {
+    width: 100%;
+    max-width: 600px;  /* widened from 480px */
+    padding: 20px;
+}
+
+/* Card style */
+.register-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 8px 25px rgba(255, 111, 145, 0.25); /* sweet pink shadow */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 100%;
+}
+
+/* Heading */
+.register-card h1 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Labels */
+.register-card label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #444444;
+    margin-bottom: 6px;
+    display: block;
+}
+
+/* Inputs */
+.register-card input[type="text"],
+.register-card input[type="email"],
+.register-card input[type="tel"],
+.register-card input[type="password"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #7fb3bb; /* slightly darker mint blue */
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-card input[type="text"]:focus,
+.register-card input[type="email"]:focus,
+.register-card input[type="tel"]:focus,
+.register-card input[type="password"]:focus {
+    border-color: #ff6f91; /* sweet pink */
+    outline: none;
+    box-shadow: 0 0 8px #ff6f91;
+}
+
+/* Buttons container */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Buttons common */
+.form-buttons button {
+    flex: 1;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button */
+.btn-submit {
+    background-color: #ff6f91; /* sweet pink */
+    color: white;
+    box-shadow: 0 6px 15px rgba(255, 111, 145, 0.4);
+}
+
+.btn-submit:hover {
+    background-color: #e85b7a;
+}
+
+/* Clear button */
+.btn-clear {
+    background-color: #7fb3bb; /* darker mint blue */
+    color: white;
+    box-shadow: 0 6px 15px rgba(127, 179, 187, 0.4);
+}
+
+.btn-clear:hover {
+    background-color: #699aa1;
+}

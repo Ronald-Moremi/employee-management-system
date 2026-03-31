@@ -1,0 +1,118 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #f9fafb;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left side - full image, no opacity */
+.left-side {
+    flex: 1;
+    background: url('../images/login-bg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Overlay text on image */
+.left-side .overlay {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    right: 10%;
+    color: #333333;
+    z-index: 2;
+    text-align: left;
+}
+
+.left-side .overlay h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff6f91; /* Sweet Pink */
+    margin-bottom: 10px;
+}
+
+.left-side .overlay p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Right side - login form */
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7fb3bb; /* darker mint light blue */
+    position: relative;
+    z-index: 3;
+}
+
+.login-box {
+    width: 80%;
+    max-width: 400px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.1);
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 25px;
+    color: #333333;
+    font-weight: 700;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1.5px solid #7fb3bb;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+.login-box input[type="text"]:focus,
+.login-box input[type="password"]:focus {
+    border-color: #ff6f91;
+    outline: none;
+    box-shadow: 0 0 5px #ff6f91;
+}
+
+.login-box input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 111, 145, 0.4);
+}
+
+.login-box input[type="submit"]:hover {
+    background-color: #e85b7a;
+}
+
+.error {
+    color: #ff6f91;
+    margin-top: 10px;
+    font-weight: 600;
+}
