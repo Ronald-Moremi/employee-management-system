@@ -18,6 +18,33 @@ This is a desktop application built using Java Swing to manage employees, depart
 - Swing
 - SQL / JavaDB
 
+---
+
+## 🧑‍💼 Employee Management System Screenshots
+
+### 📊 System Overview
+![Employee System Overview](Employee_management_System_Screenshots/Screenshot%202026-03-31%20235619.png)
+
+---
+
+### 🔐 Login Screen
+![Login](Employee_management_System_Screenshots/Screenshot%202026-04-01%20000149.png)
+
+---
+
+### 👥 Employee Dashboard
+![Dashboard](Employee_management_System_Screenshots/Screenshot%202026-04-01%20000239.png)
+
+---
+
+### ➕ Add Employee Form
+![Add Employee](Employee_management_System_Screenshots/Screenshot%202026-04-01%20000302.png)
+
+---
+
+### 📋 Employee List View
+![Employee List](Employee_management_System_Screenshots/Screenshot%202026-04-01%20000343.png)
+
 
 
 ## ▶️ How to Run
